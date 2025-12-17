@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <!-- State Apostille Icon: Capitol dome with star -->
+    <symbol id="state-apostille" viewBox="0 0 48 48">
+        <g fill="currentColor">
+            <!-- Dome -->
+            <path d="M24 4L8 14v4h32v-4L24 4z"/>
+            <!-- Star on top -->
+            <path d="M24 2l1.5 4.5h4.7l-3.8 2.8 1.5 4.6L24 11.1l-3.9 2.8 1.5-4.6-3.8-2.8h4.7z"/>
+            <!-- Columns -->
+            <rect x="10" y="18" width="3" height="20"/>
+            <rect x="18" y="18" width="3" height="20"/>
+            <rect x="27" y="18" width="3" height="20"/>
+            <rect x="35" y="18" width="3" height="20"/>
+            <!-- Base -->
+            <rect x="6" y="38" width="36" height="4"/>
+            <rect x="4" y="42" width="40" height="2"/>
+        </g>
+    </symbol>
+    
+    <!-- Federal Apostille Icon: Federal building -->
+    <symbol id="federal-apostille" viewBox="0 0 48 48">
+        <g fill="currentColor">
+            <!-- Pediment -->
+            <path d="M24 6L6 16h36L24 6z"/>
+            <!-- Columns -->
+            <rect x="8" y="16" width="3" height="22"/>
+            <rect x="14" y="16" width="3" height="22"/>
+            <rect x="20" y="16" width="3" height="22"/>
+            <rect x="25" y="16" width="3" height="22"/>
+            <rect x="31" y="16" width="3" height="22"/>
+            <rect x="37" y="16" width="3" height="22"/>
+            <!-- Steps -->
+            <rect x="4" y="38" width="40" height="3"/>
+            <rect x="2" y="41" width="44" height="3"/>
+            <!-- Flag -->
+            <rect x="22" y="2" width="1" height="6"/>
+            <path d="M23 2h6v4h-6z"/>
+        </g>
+    </symbol>
+    
+    <!-- Consular Legalization Icon: Passport stamp with globe -->
+    <symbol id="consular-legalization" viewBox="0 0 48 48">
+        <g fill="currentColor">
+            <!-- Passport outline -->
+            <rect x="8" y="6" width="28" height="36" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+            <!-- Globe -->
+            <circle cx="22" cy="20" r="8" fill="none" stroke="currentColor" stroke-width="2"/>
+            <!-- Latitude lines -->
+            <ellipse cx="22" cy="20" rx="8" ry="3" fill="none" stroke="currentColor" stroke-width="1"/>
+            <ellipse cx="22" cy="20" rx="8" ry="5" fill="none" stroke="currentColor" stroke-width="1"/>
+            <!-- Longitude line -->
+            <ellipse cx="22" cy="20" rx="3" ry="8" fill="none" stroke="currentColor" stroke-width="1"/>
+            <!-- Stamp effect -->
+            <circle cx="22" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="2,2" opacity="0.5"/>
+            <!-- Text lines -->
+            <line x1="12" y1="32" x2="28" y2="32" stroke="currentColor" stroke-width="1"/>
+            <line x1="12" y1="36" x2="32" y2="36" stroke="currentColor" stroke-width="1"/>
+            <line x1="12" y1="40" x2="24" y2="40" stroke="currentColor" stroke-width="1"/>
+        </g>
+    </symbol>
+</svg>

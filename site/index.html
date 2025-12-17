@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Know exactly where to send your document for apostille or legalization. Instant, step-by-step routing with official links and a printable checklist.">
+    <meta name="keywords" content="apostille, legalization, document authentication, state apostille, federal apostille, consular legalization">
+    <title>Apostille Path – Apostille & Legalization Wizard</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <header class="site-header">
+        <nav class="nav-container">
+            <div class="logo">
+                <strong>Apostille Path</strong>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="./wizard/">Start Wizard</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Know exactly where to send your document for apostille or legalization</h1>
+                    <p class="hero-subheadline">Instant, step-by-step routing with official links and a printable checklist. Avoid mis-routed submissions and wasted fees.</p>
+                    
+                    <div class="reassurance-pills">
+                        <span class="pill">✓ Official-source links only</span>
+                        <span class="pill">✓ 100% self-serve, no upsells</span>
+                        <span class="pill">✓ Printable checklist in minutes</span>
+                    </div>
+
+                    <div class="hero-ctas">
+                        <a href="./wizard/" class="btn btn-primary">Start the Wizard</a>
+                        <a href="#how-it-works" class="btn btn-secondary">See how it works</a>
+                    </div>
+
+                    <div class="wizard-preview-card">
+                        <h3>Wizard Preview</h3>
+                        <div class="preview-fields">
+                            <div class="preview-field">
+                                <label>Destination country</label>
+                                <div class="preview-input">Select from 100+ countries</div>
+                            </div>
+                            <div class="preview-field">
+                                <label>Document type</label>
+                                <div class="preview-input">Birth certificate, marriage certificate, FBI background check, notarized letter, diploma, etc.</div>
+                            </div>
+                            <div class="preview-field">
+                                <label>Issuing authority</label>
+                                <div class="preview-input">State or Federal</div>
+                            </div>
+                        </div>
+                        <p class="preview-note">No account required. You'll get a route summary free; export a detailed checklist for $7.</p>
+                    </div>
+
+                    <div class="trust-row">
+                        <p class="trust-label">Routing based on:</p>
+                        <div class="trust-icons">
+                            <div class="trust-item">
+                                <svg class="icon icon-state" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                                    <use href="assets/icons.svg#state-apostille"></use>
+                                </svg>
+                                <span>State Secretary of State</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg class="icon icon-federal" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                                    <use href="assets/icons.svg#federal-apostille"></use>
+                                </svg>
+                                <span>U.S. Department of State</span>
+                            </div>
+                            <div class="trust-item">
+                                <svg class="icon icon-consular" width="48" height="48" viewBox="0 0 48 48" aria-hidden="true">
+                                    <use href="assets/icons.svg#consular-legalization"></use>
+                                </svg>
+                                <span>Embassy/Consulate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You Get Section -->
+        <section id="what-you-get" class="what-you-get">
+            <div class="container">
+                <h2>Your exact route, with the steps and links to do it right the first time</h2>
+                <div class="feature-grid">
+                    <div class="feature-tile">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>Route Card</h3>
+                        <p>See instantly whether your document needs state apostille, federal apostille, or consular legalization. No guesswork.</p>
+                    </div>
+                    <div class="feature-tile">
+                        <div class="feature-icon">✅</div>
+                        <h3>Step-by-Step Checklist</h3>
+                        <p>Each step includes the authority name, estimated processing time, current fees, and a direct link to the official page.</p>
+                    </div>
+                    <div class="feature-tile">
+                        <div class="feature-icon">📄</div>
+                        <h3>Export & Share</h3>
+                        <p>Download a PDF checklist or print it. Perfect for keeping track as you submit documents through each office.</p>
+                    </div>
+                </div>
+                <div class="micro-ctas">
+                    <button class="link-button" onclick="openSampleModal()">View a sample route</button>
+                    <span class="separator">•</span>
+                    <a href="#documents">Explore supported documents</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Live Example Section -->
+        <section id="example" class="example">
+            <div class="container">
+                <h2>Example: State Apostille Route</h2>
+                <div class="route-card">
+                    <div class="route-header">
+                        <div class="route-badge route-badge-state">State Apostille</div>
+                        <p class="route-summary">Birth certificate issued in California, traveling to Spain</p>
+                    </div>
+                    <div class="route-steps">
+                        <div class="route-step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>Obtain certified copy</h4>
+                                <p>Request from California Department of Public Health – Vital Records</p>
+                                <p class="step-meta">Fee: ~$25–35 • Processing: 4–8 weeks</p>
+                                <button class="btn-link">View official link</button>
+                                <span class="as-of-date">as of Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="route-step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Get state apostille</h4>
+                                <p>California Secretary of State – Authentications Unit</p>
+                                <p class="step-meta">Fee: $20 • Processing: 5–10 business days</p>
+                                <button class="btn-link">View official link</button>
+                                <span class="as-of-date">as of Dec 2024</span>
+                            </div>
+                        </div>
+                        <div class="route-step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>Submit to destination country</h4>
+                                <p>Present apostilled document according to Spain's requirements</p>
+                                <p class="step-meta">Check destination country procedures</p>
+                                <button class="btn-link">View official link</button>
+                                <span class="as-of-date">as of Dec 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="route-note"><strong>Note:</strong> Fees and processing times vary. Always check the current official page before submitting.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works">
+            <div class="container">
+                <h2>How It Works</h2>
+                <div class="steps-grid">
+                    <div class="step-card">
+                        <div class="step-badge">1</div>
+                        <h3>Answer</h3>
+                        <p>Tell us your destination country, document type, and issuing authority. Takes 60 seconds.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-badge">2</div>
+                        <h3>Get Route</h3>
+                        <p>Instantly see if you need state apostille, federal apostille, or consular legalization—plus all the steps.</p>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-badge">3</div>
+                        <h3>Finish Fast</h3>
+                        <p>Download or print your checklist. Follow the steps yourself, without agency markups or delays.</p>
+                    </div>
+                </div>
+                <p class="reassurance-text">We don't handle your documents. No account needed. No uploads. Just the routing info you need.</p>
+            </div>
+        </section>
+
+        <!-- Who It's For Section -->
+        <section id="who-its-for" class="who-its-for">
+            <div class="container">
+                <h2>Who It's For</h2>
+                <div class="audience-grid">
+                    <div class="audience-card">
+                        <h3>Individuals</h3>
+                        <p>Moving abroad for work, study, or immigration? Get your birth certificate, marriage license, or background check apostilled correctly the first time.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>Business Professionals</h3>
+                        <p>Need to authenticate corporate documents, powers of attorney, or notarized contracts for international business? Know the exact route.</p>
+                    </div>
+                    <div class="audience-card">
+                        <h3>DIY Filers</h3>
+                        <p>Skip the agency markups. Handle the apostille process yourself with confidence, backed by official links and current fee information.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Documents Supported Section -->
+        <section id="documents" class="documents">
+            <div class="container">
+                <h2>Documents Supported</h2>
+                <div class="document-categories">
+                    <div class="doc-category">
+                        <h3>Personal Documents</h3>
+                        <ul>
+                            <li>Birth certificates</li>
+                            <li>Marriage certificates</li>
+                            <li>Divorce decrees</li>
+                            <li>Death certificates</li>
+                            <li>Name change documents</li>
+                        </ul>
+                    </div>
+                    <div class="doc-category">
+                        <h3>Background & Criminal Records</h3>
+                        <ul>
+                            <li>FBI background checks (Identity History Summary)</li>
+                            <li>State criminal record checks</li>
+                            <li>Police clearance letters</li>
+                        </ul>
+                    </div>
+                    <div class="doc-category">
+                        <h3>Educational Documents</h3>
+                        <ul>
+                            <li>Diplomas (high school, college, university)</li>
+                            <li>Transcripts</li>
+                            <li>Degree certificates</li>
+                        </ul>
+                    </div>
+                    <div class="doc-category">
+                        <h3>Business & Legal Documents</h3>
+                        <ul>
+                            <li>Powers of attorney</li>
+                            <li>Corporate documents</li>
+                            <li>Notarized employer letters</li>
+                            <li>Affidavits</li>
+                            <li>Contracts</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Countries Covered Section -->
+        <section id="countries" class="countries">
+            <div class="container">
+                <h2>Countries Covered</h2>
+                <p class="section-intro">We cover routing for documents traveling to 100+ countries, including all Hague Convention members and many non-Hague countries requiring consular legalization.</p>
+                <div class="country-examples">
+                    <div class="country-group">
+                        <h3>Popular Destinations</h3>
+                        <p>Spain, United Kingdom, Germany, France, Canada, Australia, Japan, South Korea, Mexico, Brazil, Italy, Netherlands, Switzerland, Portugal, and more.</p>
+                    </div>
+                    <div class="country-group">
+                        <h3>Non-Hague Countries</h3>
+                        <p>For countries not part of the Hague Apostille Convention, we provide the consular legalization route, including U.S. Department of State authentication and embassy steps.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing">
+            <div class="container">
+                <h2>Pricing</h2>
+                <div class="pricing-card">
+                    <div class="price-header">
+                        <div class="price-amount">$7</div>
+                        <div class="price-label">per country workflow</div>
+                    </div>
+                    <div class="price-includes">
+                        <h3>What's Included</h3>
+                        <ul>
+                            <li>✓ Complete route determination (state/federal/consular)</li>
+                            <li>✓ Step-by-step checklist with official links</li>
+                            <li>✓ Current fee estimates and processing times</li>
+                            <li>✓ Downloadable/printable PDF checklist</li>
+                            <li>✓ As-of dates for all information</li>
+                        </ul>
+                    </div>
+                    <div class="price-free">
+                        <h3>Free</h3>
+                        <ul>
+                            <li>✓ Basic route summary (which authority handles it)</li>
+                            <li>✓ Browse document types and countries</li>
+                        </ul>
+                    </div>
+                    <p class="price-note"><small><strong>Important:</strong> The $7 fee is for the routing checklist only. Government apostille/legalization fees are separate and paid directly to the issuing authorities. Check official pages for current rates.</small></p>
+                    <p class="price-note"><small><strong>Refund policy:</strong> We offer refunds if the routing information is factually incorrect or if official links are broken. No refunds for changes in personal circumstances or government fee changes.</small></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why vs Agencies Section -->
+        <section id="why-us" class="why-us">
+            <div class="container">
+                <h2>Why Use Apostille Path Instead of an Agency?</h2>
+                <div class="comparison-grid">
+                    <div class="comparison-item">
+                        <h3>No Markups</h3>
+                        <p>Agencies often charge $100–300+ per document. With Apostille Path, you pay only the official government fees—our $7 fee just gives you the roadmap.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Faster</h3>
+                        <p>No need to mail documents to a middleman. Follow the checklist and submit directly to the right office, cutting out weeks of transit time.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Transparent</h3>
+                        <p>Every step includes the official link and as-of date. You always know where your document is going and why.</p>
+                    </div>
+                    <div class="comparison-item">
+                        <h3>Control</h3>
+                        <p>Keep your original documents. Track the process yourself. No agency holds your irreplaceable documents.</p>
+                    </div>
+                </div>
+                <p class="reassurance-text"><strong>We don't handle documents.</strong> We provide routing information. You do the submission. No agency fees, no upsells.</p>
+            </div>
+        </section>
+
+        <!-- Accuracy and Sources Section -->
+        <section id="accuracy" class="accuracy">
+            <div class="container">
+                <h2>Accuracy & Sources</h2>
+                <div class="accuracy-content">
+                    <p>All routing logic, fees, and processing times are based on official sources:</p>
+                    <ul class="source-list">
+                        <li><strong>State Secretaries of State:</strong> Authentication/apostille division websites for each U.S. state and territory</li>
+                        <li><strong>U.S. Department of State:</strong> Office of Authentications for federal documents and consular legalization</li>
+                        <li><strong>Embassy and Consulate websites:</strong> Legalization requirements for non-Hague countries</li>
+                    </ul>
+                    <p><strong>Quarterly review:</strong> We review and update all routes, fees, and links every quarter. Each piece of information includes an "as-of" date so you know how current it is.</p>
+                    <p><strong>Accuracy guarantee:</strong> If you find factually incorrect routing or broken official links, we'll refund your $7 and fix the issue immediately.</p>
+                    <div class="badges">
+                        <span class="badge">Official links</span>
+                        <span class="badge">No markups</span>
+                        <span class="badge">Printable PDF</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials">
+            <div class="container">
+                <h2>What People Say</h2>
+                <div class="testimonial-grid">
+                    <blockquote class="testimonial">
+                        <p>"Saved me $200 and two weeks. The checklist told me exactly where to send my birth certificate for Spain. No confusion, no agency markup."</p>
+                        <cite>— Sarah M., California</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"I was about to pay an agency $350 to apostille my FBI check. This tool showed me the exact route for $7. Did it myself in 10 days."</p>
+                        <cite>— James K., Texas</cite>
+                    </blockquote>
+                    <blockquote class="testimonial">
+                        <p>"Finally, a straightforward answer about whether I needed state or federal apostille. The wizard gave me the route in under a minute."</p>
+                        <cite>— Maria G., New York</cite>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq">
+            <div class="container">
+                <h2>Frequently Asked Questions</h2>
+                <div class="faq-list">
+                    <details class="faq-item">
+                        <summary>What exactly do I get for $7?</summary>
+                        <div class="faq-answer">
+                            <p>A detailed, step-by-step checklist showing:</p>
+                            <ul>
+                                <li>Which authority handles your document (state apostille, federal apostille, or consular legalization)</li>
+                                <li>Each required step, in order</li>
+                                <li>Official links to the relevant government pages</li>
+                                <li>Current fee estimates and processing times</li>
+                                <li>As-of dates for all information</li>
+                                <li>A downloadable/printable PDF</li>
+                            </ul>
+                            <p>Government apostille/legalization fees are separate and paid directly to the authorities.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do you handle my documents?</summary>
+                        <div class="faq-answer">
+                            <p><strong>No.</strong> We don't touch, mail, or process any documents. We provide routing information only. You submit your documents directly to the relevant offices following our checklist.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>How do I know if I need state, federal, or consular?</summary>
+                        <div class="faq-answer">
+                            <p>That's what the wizard determines. Answer three quick questions (destination country, document type, issuing authority) and you'll instantly see which route applies to your situation.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Are the fees and links up to date?</summary>
+                        <div class="faq-answer">
+                            <p>We review all routes, fees, and links quarterly. Each data point includes an "as-of" date. We recommend verifying fees on the official page before submitting, as government fees can change.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>What if the routing is wrong or a link is broken?</summary>
+                        <div class="faq-answer">
+                            <p>We offer a full refund if the routing information is factually incorrect or if official links don't work. Contact us with details and we'll refund your $7 and fix the issue immediately.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Do I need an account?</summary>
+                        <div class="faq-answer">
+                            <p>No. The wizard runs entirely in your browser. No signup, no login, no uploads.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Can I get a refund if my plans change?</summary>
+                        <div class="faq-answer">
+                            <p>Refunds are available if the routing information is incorrect or links are broken. We don't refund for changes in personal circumstances or government fee changes after purchase.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary>Which countries are covered?</summary>
+                        <div class="faq-answer">
+                            <p>We cover 100+ countries, including all Hague Apostille Convention members and many non-Hague countries that require consular legalization. Popular destinations include Spain, UK, Germany, Canada, Australia, Japan, Mexico, and more.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA Section -->
+        <section id="final-cta" class="final-cta">
+            <div class="container">
+                <h2>Get Your Route in 60 Seconds</h2>
+                <p>No account. No uploads. Just the steps and links you need to apostille or legalize your document correctly.</p>
+                <a href="./wizard/" class="btn btn-primary btn-large">Start the Wizard Now</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>Apostille Path</h3>
+                    <p>Know exactly where to send your document for apostille or legalization.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="./wizard/">Routing Wizard</a></li>
+                        <li><a href="./how-it-works/">How It Works</a></li>
+                        <li><a href="./sources/">Sources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#documents">Documents</a></li>
+                        <li><a href="#countries">Countries</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="./privacy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Apostille Path. We provide routing information only. We don't handle documents.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sample Route Modal -->
+    <div id="sample-modal" class="modal" role="dialog" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeSampleModal()" aria-label="Close modal">&times;</button>
+            <h2 id="modal-title">Sample Route: Federal Apostille</h2>
+            <div class="route-card">
+                <div class="route-header">
+                    <div class="route-badge route-badge-federal">Federal Apostille</div>
+                    <p class="route-summary">FBI background check, traveling to Germany</p>
+                </div>
+                <div class="route-steps">
+                    <div class="route-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Obtain FBI background check</h4>
+                            <p>FBI Identity History Summary Check</p>
+                            <p class="step-meta">Fee: $18 • Processing: 12–14 weeks</p>
+                            <button class="btn-link">View official link</button>
+                            <span class="as-of-date">as of Dec 2024</span>
+                        </div>
+                    </div>
+                    <div class="route-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Get federal apostille</h4>
+                            <p>U.S. Department of State – Office of Authentications</p>
+                            <p class="step-meta">Fee: $20 • Processing: 2–3 weeks</p>
+                            <button class="btn-link">View official link</button>
+                            <span class="as-of-date">as of Dec 2024</span>
+                        </div>
+                    </div>
+                    <div class="route-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Submit to destination country</h4>
+                            <p>Present apostilled FBI check according to Germany's requirements</p>
+                            <button class="btn-link">View official link</button>
+                            <span class="as-of-date">as of Dec 2024</span>
+                        </div>
+                    </div>
+                </div>
+                <p class="route-note"><strong>Note:</strong> This is a sample route for illustration. Actual routes depend on your specific situation.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

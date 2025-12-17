@@ -1,0 +1,97 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./site
+
+  # Deployment job for main branch (production)
+  deploy-production:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+  # Preview deployment for pull requests
+  deploy-preview:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4.1.3
+        with:
+          name: github-pages
+          path: ./preview
+
+      - name: Extract artifact
+        run: |
+          cd preview
+          tar -xvf artifact.tar
+
+      - name: Comment PR with preview info
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const prNumber = context.issue.number;
+            const repoName = context.repo.repo;
+            const owner = context.repo.owner;
+            
+            const comment = `## 🚀 Preview Deployment
+            
+            This PR has been built successfully. 
+            
+            **Note:** Preview deployments for static sites are available by downloading the build artifact from the workflow run.
+            
+            To view the preview:
+            1. Go to the [Actions tab](https://github.com/${owner}/${repoName}/actions)
+            2. Click on the workflow run for this PR
+            3. Download the \`github-pages\` artifact
+            4. Extract and open \`index.html\` in your browser
+            
+            Once merged to \`main\`, the site will be live at the GitHub Pages URL.`;
+            
+            github.rest.issues.createComment({
+              owner: owner,
+              repo: repoName,
+              issue_number: prNumber,
+              body: comment
+            });
