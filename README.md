@@ -1,0 +1,1 @@
+Apostille Path – Apostille & Legalization Wizard: a client‑side decision‑tree tool that tells users exactly which authority (state/federal/consular) handles their document, with steps, fees, official links, and printable checklists. Includes static JSON route data, /wizard UI, analytics events, and quarterly content review workflow.
